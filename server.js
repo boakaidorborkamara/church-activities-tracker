@@ -13,6 +13,7 @@ const church_tables = require('./model/church-table');
 const user_table = require('./model/user-table');
 const role_table = require('./model/role-table');
 const event_table = require('./model/event-table');
+const attendance_table = require('./model/attendance-table');
 
 
 
