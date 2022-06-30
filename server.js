@@ -11,6 +11,7 @@ const db_connection = require('./db-config/database');
 //create tables
 const church_tables = require('./model/church-table');
 const user_table = require('./model/user-table');
+const role_table = require('./model/role-table');
 
 
 

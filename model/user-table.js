@@ -64,7 +64,7 @@ console.log(User === sequelize.models.User);
 //create table from models
 User.sync()
     .then(() => {
-        console.log("Church model was synchronized successfully.");
+        console.log("User model was synchronized successfully.");
     })
     .catch((error) => {
         console.log(error);
