@@ -7,7 +7,7 @@ const router = express.Router();
 
 
 //get all churches
-router.get('/church', churchController.getChurch);
+router.get('/churches', churchController.church_list);
 
 
 module.exports = router;
