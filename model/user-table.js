@@ -1,7 +1,14 @@
 const { Sequelize, DataTypes } = require('sequelize');
 
+// include external models 
+const Church = require('./church-table');
+const Role = require('./role-table');
+
+
 // include database configuration file 
 const sequelize = require('../db-config/database');
+
+
 
 //create model
 const User = sequelize.define('User', {
@@ -55,6 +62,18 @@ const User = sequelize.define('User', {
 });
 
 
+//define association/foreign key
+Church.hasMany(User, {
+    foreignKey: 'ChurchId'
+});
+User.belongsTo(Church);
+
+//relationship between role and user
+Role.hasMany(User, {
+    foreignKey: 'RoleId'
+});
+User.belongsTo(Role);
+
 
 // verify if the model was created 
 console.log(User === sequelize.models.User);
@@ -62,7 +81,7 @@ console.log(User === sequelize.models.User);
 
 
 //create table from models
-User.sync()
+User.sync({ force: true })
     .then(() => {
         console.log("User model was synchronized successfully.");
     })
