@@ -1,26 +1,27 @@
 {
-  "name": "church-activities-tracker",
-  "version": "1.0.0",
-  "description": "An application that help chruches manage their activities",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/boakaidorborkamara/church-activities-tracker.git"
-  },
-  "author": "Boakai Dorbor Kamamara",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/boakaidorborkamara/church-activities-tracker/issues"
-  },
-  "homepage": "https://github.com/boakaidorborkamara/church-activities-tracker#readme",
-  "dependencies": {
-    "express": "^4.18.1",
-    "nodemon": "^1.3.3",
-    "sequelize": "^6.21.1",
-    "sqlite3": "^5.0.8"
-  }
+    "name": "church-activities-tracker",
+    "version": "1.0.0",
+    "description": "An application that help chruches manage their activities",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server.js",
+        "test": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/boakaidorborkamara/church-activities-tracker.git"
+    },
+    "author": "Boakai Dorbor Kamamara",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/boakaidorborkamara/church-activities-tracker/issues"
+    },
+    "homepage": "https://github.com/boakaidorborkamara/church-activities-tracker#readme",
+    "dependencies": {
+        "express": "^4.18.1",
+        "nodemon": "^1.3.3",
+        "sequelize": "^6.21.1",
+        "sqlite3": "^5.0.8"
+    }
 }

@@ -1,5 +1,5 @@
 const getChurch = (req, res) => {
-    res.res("Not yet implemented.")
+    res.send("Not yet implemented.")
 }
 
 

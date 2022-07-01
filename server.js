@@ -3,7 +3,7 @@ const { Sequelize, DataTypes } = require('sequelize');
 
 
 const app = express();
-const port = 3000;
+const Port = process.env.port || 3000;
 
 
 // use codes from database connection file 
@@ -16,7 +16,17 @@ const event_table = require('./model/event-table');
 const attendance_table = require('./model/attendance-table');
 
 
+//ROUTES
+const index_router = require('./routers/index_routers');
+const church_routers = require('./routers/church_routers');
 
-app.listen(port, () => {
-    console.log(`Server is listening ${port}`)
+
+
+app.use(church_routers);
+app.use(index_router);
+
+
+
+app.listen(Port, () => {
+    console.log(`Server is listening ${Port}`)
 })

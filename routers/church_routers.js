@@ -5,6 +5,7 @@ const churchController = require('../controller/chruchController');
 const router = express.Router();
 
 
+
 //get all churches
 router.get('/church', churchController.getChurch);
 
