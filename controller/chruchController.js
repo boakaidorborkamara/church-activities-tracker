@@ -1,4 +1,4 @@
-//Display all books
+//Display all churches
 const church_list = (req, res) => {
     res.send("Not yet implemented.")
 }
