@@ -19,11 +19,12 @@ const attendance_table = require('./model/attendance-table');
 //ROUTES
 const index_router = require('./routers/index_routers');
 const church_routers = require('./routers/church_routers');
+const event_routers = require("./routers/event_router");
 
 
-
-app.use(church_routers);
 app.use(index_router);
+app.use(church_routers);
+app.use(event_routers);
 
 
 

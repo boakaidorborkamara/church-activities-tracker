@@ -25,3 +25,12 @@ const event_delete_post = function(req, res) {
 const event_update_post = function(req, res) {
     res.send('NOT IMPLEMENTED: Book update POST');
 };
+
+
+module.exports = {
+    event_list,
+    event_details,
+    event_create_post,
+    event_delete_post,
+    event_update_post
+}
