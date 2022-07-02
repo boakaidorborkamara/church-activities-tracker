@@ -1,12 +1,12 @@
 // Display all events 
 const event_list = (req, res) => {
-    res.send("Church list not implemented");
+    res.send("Event list not implemented");
 }
 
 
 //Display details for a specific event
 const event_details = (req, res) => {
-    res.send("Church detail is not implemented");
+    res.send("Event detail is not implemented");
 }
 
 
