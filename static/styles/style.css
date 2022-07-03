@@ -4,9 +4,14 @@
     opacity: 0.1;
     width: 100vw;
     height: 100vh;
+    display: none;
 }
 
 main {
     position: relative;
     z-index: 1;
+}
+
+#hero-image {
+    width: 100%;
 }
