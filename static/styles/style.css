@@ -1,7 +1,10 @@
+body {
+    background-color: rgb(8, 0, 17);
+}
+
 #bg-image {
     position: absolute;
     z-index: 0;
-    opacity: 0.1;
     width: 100vw;
     height: 100vh;
     display: none;
@@ -14,4 +17,31 @@ main {
 
 #hero-image {
     width: 100%;
+}
+
+@media (max-width:990px) {
+    section div:nth-child(1) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    section div:nth-child(2) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    h1,
+    p {
+        margin-top: 40px;
+        text-align: center;
+    }
+    button {
+        /* margin-top: px; */
+        text-align: center;
+    }
+    #hero-image {
+        width: 70vw;
+    }
 }
