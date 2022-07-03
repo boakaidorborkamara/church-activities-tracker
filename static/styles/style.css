@@ -1,0 +1,12 @@
+#bg-image {
+    position: absolute;
+    z-index: 0;
+    opacity: 0.1;
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    position: relative;
+    z-index: 1;
+}
